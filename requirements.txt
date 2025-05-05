@@ -1,0 +1,8 @@
+# Install CUDA-enabled PyTorch from PyTorch's wheel index
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch
+transformers
+opencv-python
+Pillow
+tqdm
+fire

@@ -1,0 +1,13 @@
+conda create -y -n promptmask python=3.11
+conda activate promptmask
+
+pip install -r requirements.txt
+
+python -c "import torch; print(torch.cuda.is_available())"
+
+
+python prompt_mask.py --images_dir C:\Storage\Work\GSExperiments\Adapter\images --output_mask_dir C:\Storage\Work\GSExperiments\Adapter\mask_tst --output_overlay_dir C:\Storage\Work\GSExperiments\Adapter\overlays_tst --prompt "[\"travel adapter\", \"plug adapter\"]"
+
+
+
+python prompt_mask.py --images_dir examples/watch/images --output_mask_dir examples/watch/masks --prompt "watch" --output_overlay_dir examples/watch/visualizations
