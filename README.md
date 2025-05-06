@@ -1,5 +1,9 @@
 # prompt-mask 
 
+![watch](examples/watch/watch_example.jpg)
+
+<sub>From left to right: input image, visualization overlay, binary mask.</sub>
+
 Generate **COLMAP-compatible binary masks** from RGB images using a **text prompt**, leveraging [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO) and [Segment Anything](https://github.com/facebookresearch/segment-anything) via Hugging Face `transformers`.
 
 - Input: A folder of RGB images and a descriptive text prompt  
@@ -64,14 +68,6 @@ python prompt_mask.py \
 | `--prompt`                    | Text prompt. Use multiple labels separated by periods (e.g. `"watch . dial"`) |
 | `--output_visualization_dir` | (Optional) Folder to save visual overlay images                            |
 | `--threshold`                 | Detection confidence threshold (default: `0.5`)                            |
-
-## Example Output
-
-Using prompt `"watch"` on a sequence of frames:
-
-![watch](examples/watch/watch_example.jpg)
-
-<sub>From left to right: input image, visualization overlay, binary mask.</sub>
 
 ## Using with COLMAP
 
